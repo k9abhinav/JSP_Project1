@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME | FSD PROJECT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Optional: Custom width for button */
+        button {
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-100 flex items-center justify-center">
+    
+    <form action="saveEmployee" method="POST" class="bg-white shadow-lg w-full max-w-lg rounded-lg mt-20 p-10 text-center flex flex-col">
+        <h1 class="text-4xl font-bold mb-10 text-blue-500">CEC FORM</h1>
+        
+        <div class="mb-6 w-full flex flex-col items-start">
+            <label for="firstName" class="text-lg font-semibold mb-2">First Name</label>
+            <input type="text" name="firstName" id="firstName" class="w-full p-3 bg-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Enter your First Name" required/>
+        </div>
+        
+        <div class="mb-6 w-full flex flex-col items-start">
+            <label for="lastName" class="text-lg font-semibold mb-2">Last Name</label>
+            <input type="text" name="lastName" id="lastName" class="w-full p-3 bg-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Enter your Last Name" required/>
+        </div>
+        
+        <div class="mb-6 w-full flex flex-col items-start">
+            <label for="phoneNo" class="text-lg font-semibold mb-2">Phone No.</label>
+            <input type="text" name="phoneNo" id="phoneNo" class="w-full p-3 bg-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Enter your Phone No." required/>
+        </div>
+        
+        <button type="submit" class="mt-6 bg-blue-500 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-600 focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50 w-full">Submit</button>
+    </form>
+    
+</body>
+</html>
